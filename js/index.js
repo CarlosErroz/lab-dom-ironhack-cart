@@ -32,16 +32,14 @@ window.addEventListener('load', () => {
   let totalResult =0;
   for (let i=0;i<productsAll.length;i++) {
   const res = updateSubtotal(productsAll[i]);
-  totalResult += res
-  console.log(totalResult)
+  totalResult += res;
   }
   //Nota a preguntar: probé con forEach y no hubo manera
 
 
   // ITERATION 3
   //... your code goes here
-  const resultTotal = document.querySelector("#total-value span");
-  resultTotal.innerHTML = totalResult;
+  document.querySelector("#total-value span").innerHTML = totalResult;
 
  
   //const totalResult = document.querySelector("#total-value span");
